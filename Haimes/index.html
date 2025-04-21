@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Haimes Automation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans">
+  <!-- Header -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center space-x-3">
+        <img src="./assets/images/haimes_logo1.jpg" alt="Haimes Logo" class="w-15 h-10 object-contain">
+        <h1 class="text-2xl font-bold text-blue-800">Haimes Automation</h1>
+      </div>
+      <nav class="space-x-6">
+        <a href="#about" class="text-gray-700 hover:text-blue-600">About</a>
+        <a href="#services" class="text-gray-700 hover:text-blue-600">Services</a>
+        <a href="#contact" class="text-gray-700 hover:text-blue-600">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative py-24 text-center text-white" style="background-image: url('./assets/images/haimes_logo4.jpg'); background-size: cover; background-position: center;">
+    <div class="bg-black opacity-80 absolute inset-0"></div>
+    <div class="relative max-w-3xl mx-auto animate-fade-in-up z-10">
+      <h2 class="text-4xl font-bold text-gold-400 mb-4">Innovating Your Workflow</h2>
+      <p class="text-lg">Empowering businesses through optimization, automation, and intelligent analysis.</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 px-4 max-w-5xl mx-auto">
+    <h3 class="text-3xl font-semibold mb-6 text-blue-800">About Us</h3>
+    <p class="text-gray-700 text-lg leading-relaxed">
+      Haimes Automation is an innovative high-tech company striving to deliver high-quality products and services to meet customers' workflow and AI consulting needs.
+    </p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-16 bg-gray-100 px-4">
+    <div class="max-w-6xl mx-auto">
+      <h3 class="text-3xl font-semibold mb-10 text-blue-800 text-center">Our Services</h3>
+      <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-2">
+        <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300">
+          <h4 class="text-xl font-semibold text-blue-700 mb-2">Workflow Optimisation</h4>
+          <p class="text-gray-700">Design, evaluation and optimisation of team operations, workflows and processes for increased capacity, efficient execution, reduced cost and time management.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300">
+          <h4 class="text-xl font-semibold text-blue-700 mb-2">Workflow Automation</h4>
+          <p class="text-gray-700">Integration of appropriate information technology, software, and equipment including AI assistants to upscale operations.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300">
+          <h4 class="text-xl font-semibold text-blue-700 mb-2">Workflow Layout Optimisation</h4>
+          <p class="text-gray-700">Analysis, design, evaluation and optimisation of work layout for increased capacity, safety and efficiency.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300">
+          <h4 class="text-xl font-semibold text-blue-700 mb-2">Industrial Accident Analysis</h4>
+          <p class="text-gray-700">Investigation of accidents as unintended workflow outcomes. Evaluation for prevention, expert testimony, and identification of causes of industrial accidents.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 px-4 max-w-4xl mx-auto">
+    <h3 class="text-3xl font-semibold mb-6 text-blue-800">Contact Us</h3>
+    <p class="text-gray-700 text-lg mb-4">Have questions or want to work with us? Reach out below:</p>
+    <ul class="text-gray-800 space-y-2 mb-8">
+      <li><strong>Email:</strong> <a href="mailto:haimes.au@gmail.com" class="text-blue-700">haimes.au@gmail.com</a></li>
+      <li><strong>Phone 1:</strong> 08069653840</li>
+      <li><strong>Phone 2:</strong> 07038373625</li>
+    </ul>
+
+    <!-- Netlify Form -->
+    <form name="contact" method="POST" data-netlify="true" class="bg-white p-6 rounded-2xl shadow-md space-y-4">
+      <input type="hidden" name="form-name" value="contact">
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Name</label>
+        <input type="text" name="name" required class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500" />
+      </div>
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Email</label>
+        <input type="email" name="email" required class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500" />
+      </div>
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Message</label>
+        <textarea name="message" rows="4" required class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"></textarea>
+      </div>
+      <button type="submit" class="bg-blue-700 hover:bg-blue-800 text-white font-semibold py-2 px-6 rounded-lg transition-all duration-300">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-900 text-white text-center py-6 mt-10">
+    <p>&copy; 2025 Haimes Automation. All rights reserved.</p>
+  </footer>
+
+  <!-- Custom Theme Color -->
+  <style>
+    .text-gold-400 {
+      color: #FFD700;
+    }
+  </style>
+
+  <!-- Simple Animation Utility -->
+  <style>
+    @keyframes fade-in-up {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .animate-fade-in-up {
+      animation: fade-in-up 1s ease-out;
+    }
+  </style>
+</body>
+
+</html>
